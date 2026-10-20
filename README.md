@@ -18,6 +18,8 @@ Quem recebeu um convite também pode entrar pelo Chrome ou Edge, sem instalar. A
 
 O app procura versões novas ao abrir e a cada quatro horas enquanto estiver aberto. Você também pode usar **Atualizações → Verificar agora**. O download e a instalação são separados; **Instalar e reiniciar** exige confirmação e encerra as salas deste aplicativo.
 
+Na versão 0.1.7, a tela cheia do aplicativo usa composição por software como medida de compatibilidade para artefatos gráficos relatados. Isso pode aumentar o uso de CPU. A prévia da própria tela começa oculta para evitar efeito espelho; o envio aos convidados continua. Use **Mostrar prévia** para conferir e **Esc** para sair da tela cheia. A causa exata do relato de tela verde não foi reproduzida; a correção foi validada com captura de uma janela controlada e testes de cores/vídeo.
+
 O canal verifica assinatura criptográfica dos metadados e integridade do instalador. A partir da versão 0.1.6, os arquivos publicados têm proteção de imutabilidade e atestado de origem do release no GitHub. Isso protege contra troca dos arquivos depois de publicar; não representa auditoria independente do código.
 
 ## Segurança ao baixar
