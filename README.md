@@ -1,9 +1,48 @@
 # T1x Screen
 
-Instaladores oficiais e atualizações do aplicativo Windows T1x Screen.
+Compartilhe tela, câmera, voz e conversa em salas privadas por convite.
 
-[Baixar a versão mais recente](https://github.com/mathadoor23/t1x-screen-releases/releases/latest)
+**Windows x64 · versão em desenvolvimento · distribuição oficial**
 
-Baixe o arquivo T1x-Screen-Setup da versão desejada. O aplicativo consulta novas versões e permite baixar e instalar quando você escolher. Convidados também podem entrar pelo navegador usando o convite do anfitrião.
+## Baixar
 
-Este repositório contém somente arquivos de distribuição; não contém código-fonte ou dados de usuários.
+[**Baixar a versão mais recente**](https://github.com/mathadoor23/t1x-screen-releases/releases/latest)
+
+Na página da versão, abra **Assets** e baixe o arquivo **T1x-Screen-Setup-VERSAO.exe**. Esse é o instalador completo. Os arquivos JSON, YAML, blockmap e SHA256SUMS são usados para atualização e conferência; não é necessário abri-los para instalar.
+
+Não é necessário Node, Java ou conta GitHub. O aplicativo instala no usuário do Windows. Se uma versão antiga estiver aberta, encerre sua sala e feche o aplicativo antes de instalar. A edição portátil antiga precisa dessa primeira instalação para receber atualizações pelo app.
+
+Quem recebeu um convite também pode entrar pelo Chrome ou Edge, sem instalar. A sala depende do PC anfitrião ligado e conectado.
+
+## Atualizações
+
+O app procura versões novas ao abrir e a cada quatro horas enquanto estiver aberto. Você também pode usar **Atualizações → Verificar agora**. O download e a instalação são separados; **Instalar e reiniciar** exige confirmação e encerra as salas deste aplicativo.
+
+O canal verifica assinatura criptográfica dos metadados e integridade do instalador. A partir da versão 0.1.6, os arquivos publicados têm proteção de imutabilidade e atestado de origem do release no GitHub. Isso protege contra troca dos arquivos depois de publicar; não representa auditoria independente do código.
+
+## Segurança ao baixar
+
+- Use os downloads deste repositório oficial. Não dependa de executáveis reenviados por terceiros.
+- Ainda não há certificado Authenticode de editor: o Windows pode mostrar editor desconhecido ou alertas de reputação. Hospedar no GitHub não remove esses alertas nem certifica que um programa é seguro.
+- Não desative antivírus, SmartScreen ou outras proteções para usar o aplicativo. Se o Windows impedir a execução, interrompa e reporte o problema.
+- Cada versão inclui **SHA256SUMS.txt**. Para comparar manualmente o instalador baixado, execute no PowerShell, substituindo VERSAO pelo número do arquivo:
+
+```powershell
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\T1x-Screen-Setup-VERSAO.exe'
+```
+
+Compare o hash completo com a linha correspondente do arquivo de checksums da mesma versão. Um hash igual confirma correspondência com o arquivo publicado; não comprova ausência de malware. Quem usa GitHub CLI pode verificar o atestado do release:
+
+```powershell
+gh release verify-asset vVERSAO '.\T1x-Screen-Setup-VERSAO.exe' --repo mathadoor23/t1x-screen-releases
+```
+
+## Privacidade e suporte
+
+Leia [Privacidade](PRIVACIDADE.md) antes de compartilhar informações sensíveis e [Segurança](SEGURANCA.md) para reportar problemas.
+
+Falhas de uso podem ser registradas nas [Issues](https://github.com/mathadoor23/t1x-screen-releases/issues). Informe versão, Windows, passos e mensagem de erro. Não inclua senhas, convites completos, dados pessoais ou conteúdo privado das transmissões.
+
+Esta é uma versão em desenvolvimento. Houve testes automatizados e locais; ainda faltam ensaios prolongados em outras máquinas e redes. A consulta de atualizações, o download e as verificações criptográficas foram testados; o ciclo completo de instalação/reinício por atualização ainda não foi ensaiado.
+
+O repositório contém somente documentação e arquivos de distribuição. O código-fonte não está publicado aqui.
