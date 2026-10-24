@@ -18,4 +18,4 @@ Problemas comuns de uso podem ir para as Issues. Não publique detalhes de explo
 
 ## Estado do produto
 
-Versão em desenvolvimento, com testes locais e automatizados. Não há declaração de certificação de segurança ou de conformidade comercial. Novas versões podem corrigir problemas; mantenha o aplicativo atualizado e compartilhe fontes somente com pessoas de confiança.
+Beta 1.1 (1.0.3), com testes locais e automatizados, incluindo verificação do pacote publicado. Não há declaração de certificação de segurança ou de conformidade comercial. Novas versões podem corrigir problemas; mantenha o aplicativo atualizado e compartilhe fontes somente com pessoas de confiança.
