@@ -2,7 +2,7 @@
 
 Compartilhe tela, câmera, voz e conversa em salas privadas por convite.
 
-**Windows x64 · versão em desenvolvimento · distribuição oficial**
+**Windows x64 · Beta 1.1 (1.0.3) · distribuição oficial**
 
 ## Baixar
 
@@ -15,6 +15,8 @@ Não é necessário Node, Java ou conta GitHub. O aplicativo instala no usuário
 Quem recebeu um convite também pode entrar pelo Chrome ou Edge, sem instalar. A sala depende do PC anfitrião ligado e conectado.
 
 ## Atualizações
+
+**Beta 1.1 — atualização 1.0.3:** as salas ficam mais fáceis de achar, os avisos usam o visual do T1x, o app abre maximizado e os detalhes das versões recentes aparecem nesta aba. O histórico é carregado do GitHub; se estiver sem internet, consulte as versões pelo link acima. Em perfis novos, Salas na lateral já vem ligada; perfis antigos recebem uma oferta para ativar. O botão de voz abre seus ajustes sem ligar o microfone. A 1.0.3 corrige o histórico que não carregava na primeira compilação 1.0.2. Prefira o instalador **T1x-Screen-Setup-1.0.3.exe**.
 
 **Beta 1.0 — atualização 1.0.1:** cancelar o seletor não gera erro; janela maior/redimensionável e opções de voz visíveis apenas quando ativadas. Novo recurso **Salas na lateral**, desligado inicialmente: ative em Configurações → Áudio → Recursos experimentais. Guarda até cinco salas e permite voltar em um clique. Ao trocar de tela, desconecta sua participação; ao voltar, microfone, câmera e telas permanecem desligados. O anfitrião pode voltar ao início sem encerrar; salas opt-in vazias aguardam 120 s antes de fechar. Fechar o app continua encerrando as salas hospedadas. Entradas somente em memória, sem lista de salas no diretório Amigos; no navegador, fechar/recarregar perde a lista. Atualizem os dois aplicativos para usar o recurso novo. Contatos/códigos existentes preservados. Validado neste PC, sem homologação prolongada em redes diferentes.
 
@@ -53,6 +55,6 @@ Leia [Privacidade](PRIVACIDADE.md) antes de compartilhar informações sensívei
 
 Falhas de uso podem ser registradas nas [Issues](https://github.com/mathadoor23/t1x-screen-releases/issues). Informe versão, Windows, passos e mensagem de erro. Não inclua senhas, convites completos, dados pessoais ou conteúdo privado das transmissões.
 
-Esta é uma versão em desenvolvimento. Houve testes automatizados e locais; ainda faltam ensaios prolongados em outras máquinas e redes. A consulta de atualizações, o download e as verificações criptográficas foram testados; o ciclo completo de instalação/reinício por atualização ainda não foi ensaiado.
+Esta é uma versão Beta. Houve testes automatizados e locais; ainda faltam ensaios prolongados em outras máquinas e redes. A consulta de atualizações, o download e as verificações criptográficas foram testados; a instalação/reinício em uso real por diferentes pessoas ainda precisa ser observada.
 
 O repositório contém somente documentação e arquivos de distribuição. O código-fonte não está publicado aqui.
