@@ -16,6 +16,8 @@ Quem recebeu um convite também pode entrar pelo Chrome ou Edge, sem instalar. A
 
 ## Atualizações
 
+**Novidade em 0.1.8:** correção do retorno de voz na captura do desktop e painel **Amigos**. Atualizem os dois aplicativos, abram Amigos, troquem os códigos e aceitem a solicitação. Amigos aceitos podem ver sua sala hospedada e entrar pelo painel. Há controles de presença, remoção, bloqueio e exclusão do perfil. Serviço gratuito sujeito a limites; leia os dados utilizados em [Privacidade](PRIVACIDADE.md). O áudio foi validado com voz sintética neste PC; conversas prolongadas em outras máquinas e redes ainda precisam de teste.
+
 O app procura versões novas ao abrir e a cada quatro horas enquanto estiver aberto. Você também pode usar **Atualizações → Verificar agora**. O download e a instalação são separados; **Instalar e reiniciar** exige confirmação e encerra as salas deste aplicativo.
 
 Na versão 0.1.7, a tela cheia do aplicativo usa composição por software como medida de compatibilidade para artefatos gráficos relatados. Isso pode aumentar o uso de CPU. A prévia da própria tela começa oculta para evitar efeito espelho; o envio aos convidados continua. Use **Mostrar prévia** para conferir e **Esc** para sair da tela cheia. A causa exata do relato de tela verde não foi reproduzida; a correção foi validada com captura de uma janela controlada e testes de cores/vídeo.
