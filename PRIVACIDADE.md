@@ -14,6 +14,8 @@ O aplicativo não implementa gravação de mídia em disco. A sala mantém parti
 
 Nome e preferências de dispositivos/qualidade ficam no perfil local. Configurações opcionais de TURN no desktop usam a proteção local do Electron/Windows e são fornecidas aos participantes autenticados para estabelecer a conexão. Não envie credenciais pessoais pelo chat.
 
+Desde 1.0.0, preferências de interface, layout e controles opcionais de voz também são locais. Indicador de fala e medidor analisam o sinal no próprio cliente; esses recursos não acrescentam envio de níveis/estado de fala ou gravação em disco. O gate/PTT processa o áudio em memória antes do transporte existente. O teste de microfone exige uma ação explícita, reproduz somente neste aparelho, não cria sala/conexão e para após 30 segundos ou ao sair das configurações; use fone para evitar microfonia. No desktop, o atalho opcional de mudo registra somente a combinação escolhida no sistema; PTT não usa captura global de teclado. Miniaturas da prévia permanecem locais e não são salvas como preferência.
+
 ## Serviços e conexões externas
 
 O recurso opcional **Amigos**, ativado ao abrir seu painel, usa um serviço próprio na Cloudflare com SQLite. São armazenados identificador e chave pública, nome escolhido, amizades aceitas, solicitações e bloqueios. A presença temporária contém o convite completo da sala que você hospeda; esse convite só é entregue a amigos aceitos. A lista de contatos mostra título e presença, sem o token do convite. Mídia e conversa não passam por esse diretório. A infraestrutura também recebe metadados de conexão, como IP.
