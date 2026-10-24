@@ -22,6 +22,8 @@ A identidade privada é gerada no aplicativo e protegida pelo Windows no perfil 
 
 O serviço opera no plano gratuito e está sujeito aos limites e à disponibilidade da Cloudflare.
 
+Desde 0.1.9, convites enviados pela área Amigos também ficam temporariamente no diretório, por até cinco minutos, incluindo o link necessário para validar o acesso. Somente amizades aceitas podem enviar/consultar esses convites. A lista de avisos entrega nome e título da sala; o link completo é obtido quando a pessoa escolhe entrar. Recusar, expirar, remover/bloquear o vínculo ou alterar a sala invalida o convite pelo serviço; excluir o perfil remove seus convites recebidos e os enviados aos contatos ainda vinculados. Isso não revoga cópias de links já entregues, que continuam sob os controles normais da sala. Não existe entrada ou ativação automática de câmera/microfone ao receber um convite.
+
 - **Cloudflare Quick Tunnel:** fornece o convite HTTPS temporário. O link depende do processo no PC anfitrião. No modo compatível, a mídia passa pelo Cloudflare e pelo servidor do anfitrião; não há criptografia adicional de ponta a ponta implementada nesse modo.
 - **WebRTC/STUN:** a conexão direta usa os mecanismos de segurança do WebRTC e servidores STUN para descoberta de conectividade. Isso envolve compartilhamento de informações de conexão com a infraestrutura e os participantes. TURN próprio é opcional.
 - **GitHub:** o aplicativo instalado consulta os arquivos públicos da versão e baixa atualizações. Essas requisições são recebidas pela infraestrutura do GitHub. Não exigem login GitHub do usuário.
