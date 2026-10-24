@@ -16,6 +16,12 @@ Nome e preferências de dispositivos/qualidade ficam no perfil local. Configura�
 
 ## Serviços e conexões externas
 
+O recurso opcional **Amigos**, ativado ao abrir seu painel, usa um serviço próprio na Cloudflare com SQLite. São armazenados identificador e chave pública, nome escolhido, amizades aceitas, solicitações e bloqueios. A presença temporária contém o convite completo da sala que você hospeda; esse convite só é entregue a amigos aceitos. A lista de contatos mostra título e presença, sem o token do convite. Mídia e conversa não passam por esse diretório. A infraestrutura também recebe metadados de conexão, como IP.
+
+A identidade privada é gerada no aplicativo e protegida pelo Windows no perfil local; o serviço recebe pedidos assinados, sem receber a chave privada. Não há cadastro por e-mail nem recuperação/sincronização entre computadores. Você pode desativar a presença, remover/bloquear contatos e excluir o perfil no painel. A presença expira em aproximadamente um minuto se o aplicativo perder a conexão; nomes e vínculos persistem até remoção/exclusão. Excluir o perfil remove seus vínculos ativos e pedidos do diretório; códigos já bloqueados por outros usuários podem permanecer nas listas deles. Convites já entregues não são revogados ao remover a amizade: tranque ou encerre a sala para impedir novas entradas.
+
+O serviço opera no plano gratuito e está sujeito aos limites e à disponibilidade da Cloudflare.
+
 - **Cloudflare Quick Tunnel:** fornece o convite HTTPS temporário. O link depende do processo no PC anfitrião. No modo compatível, a mídia passa pelo Cloudflare e pelo servidor do anfitrião; não há criptografia adicional de ponta a ponta implementada nesse modo.
 - **WebRTC/STUN:** a conexão direta usa os mecanismos de segurança do WebRTC e servidores STUN para descoberta de conectividade. Isso envolve compartilhamento de informações de conexão com a infraestrutura e os participantes. TURN próprio é opcional.
 - **GitHub:** o aplicativo instalado consulta os arquivos públicos da versão e baixa atualizações. Essas requisições são recebidas pela infraestrutura do GitHub. Não exigem login GitHub do usuário.
