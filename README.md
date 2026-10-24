@@ -16,6 +16,8 @@ Quem recebeu um convite também pode entrar pelo Chrome ou Edge, sem instalar. A
 
 ## Atualizações
 
+**Novo na 0.1.9:** Amigos agora fica na lateral da janela principal, com busca, pessoas online, pedidos e convites. Escolha um amigo para entrar na sala dele ou criar a sua e chamá-lo. O convite depende de aceite e expira em cinco minutos; câmera e microfone continuam desligados ao entrar. Os códigos e contatos oficiais existentes são preservados. Alternar a aba mantém a transmissão. Ambos devem atualizar para usar o novo fluxo; a presença pode levar cerca de vinte segundos para renovar.
+
 **Novidade em 0.1.8:** correção do retorno de voz na captura do desktop e painel **Amigos**. Atualizem os dois aplicativos, abram Amigos, troquem os códigos e aceitem a solicitação. Amigos aceitos podem ver sua sala hospedada e entrar pelo painel. Há controles de presença, remoção, bloqueio e exclusão do perfil. Serviço gratuito sujeito a limites; leia os dados utilizados em [Privacidade](PRIVACIDADE.md). O áudio foi validado com voz sintética neste PC; conversas prolongadas em outras máquinas e redes ainda precisam de teste.
 
 O app procura versões novas ao abrir e a cada quatro horas enquanto estiver aberto. Você também pode usar **Atualizações → Verificar agora**. O download e a instalação são separados; **Instalar e reiniciar** exige confirmação e encerra as salas deste aplicativo.
