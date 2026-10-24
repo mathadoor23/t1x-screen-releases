@@ -1,6 +1,6 @@
 # Privacidade do T1x Screen
 
-Este documento descreve o funcionamento implementado na versão de desenvolvimento atual. Não atribui ao aplicativo certificação ou auditoria de privacidade.
+Este documento descreve o funcionamento implementado na Beta 1.1 (1.0.3). Não atribui ao aplicativo certificação ou auditoria de privacidade.
 
 ## Compartilhamento e participantes
 
